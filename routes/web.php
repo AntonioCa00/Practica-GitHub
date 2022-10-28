@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\controladorVistas;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,5 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('form','Formulario');
-Route::view('tab','Tabla');
+Route::controller(controladorVistas::class)->group
+    (function(){
+        Route::get('/','vistaWelcome');
+        Route::get('form','vistaFormulario');
+        Route::get('tab','vistaTabla');
+        Route::post('EnviaForm','enviaForm');
+    }
+);

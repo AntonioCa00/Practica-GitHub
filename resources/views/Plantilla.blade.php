@@ -28,7 +28,7 @@
                         <a class="nav-link active" aria-current="page" href="form">Formulario</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Tab">Tabla</a>
+                        <a class="nav-link" href="tab">Tabla</a>
                     </li>            
                 </ul>    
             </div>

@@ -4,6 +4,16 @@
     
     <div class="container mt-5 col-md-6">
         <h1 style="color: aliceblue">Equipos más populares del futbol mexicano</h1>
+
+        @if (session()->has('Si'))
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Bienvenido!! ¿Tu equipo se encuntra en la lista?</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>    
+
+        @endif
+
         <table class="table table-success table-striped">
             <thead>
               <tr>
